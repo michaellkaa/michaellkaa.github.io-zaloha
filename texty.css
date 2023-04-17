@@ -1,0 +1,152 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--first-color);
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.loader img {
+    width: 20px;
+    height: auto;
+
+}
+
+#load-logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  margin-top: 16em;
+  width: 40%;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.star-icon, .home-icon, .portfolio-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.star-icon:hover, .home-icon:hover, .portfolio-icon:hover {
+    color: var(--third-color);
+    transition: 0.5s;
+}
+
+.sloh1, .sloh2, .sloh3 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.dopis-v-lahvi, .mami, .nevis {
+    padding: 0%;
+    margin: 0%;
+    transition: 0.5s;
+}
+
+.dopis-v-lahvi h4, .mami h4, .nevis h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--first-font);
+    text-transform: uppercase;
+    color: var(--second-color);
+    padding: 30px 10px 10px 10px;
+    margin: 0%;
+}
+
+.dopis-v-lahvi p, .mami p, .nevis p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: var(--second-font);
+    color: var(--fourth-color);
+    padding: 30px;
+    margin: 0%;
+}
+
+.dopis-v-lahvi img, .mami img, .nevis img {
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--second-color) ;
+    padding: 0%;
+    margin: 0%;
+    transition: 0.5s;
+}
+
+.dopis-v-lahvi img:hover, .mami img:hover, .nevis img:hover {
+    border-color: var(--third-color) ;
+    transition: 0.5s;
+}
+
+.dopis-v-lahvi a, .mami a, .nevis a {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
+
+@media screen and (max-width: 1320px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 140px; margin-right: 140px;}
+    .dopis-v-lahvi img, .mami img, .nevis img { width: 270px; height: auto;}
+}
+
+@media screen and (max-width: 1140px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 180px; margin-right: 180px;}
+    .dopis-v-lahvi img, .mami img, .nevis img { width: 220px; height: auto;}
+}
+
+@media screen and (max-width: 1000px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 180px; margin-right: 180px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
+}
+
+@media screen and (max-width: 790px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 150px; margin-right: 150px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
+}
+
+@media screen and (max-width: 550px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 80px; margin-right: 80px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
+}
+
+@media screen and (max-width: 550px) {
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
+}
+
+@media screen and (max-width: 375px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 60px; margin-right: 60px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
+    .dopis-v-lahvi h4, .mami h4, .nevis h4 {font-size: 30px;}
+}

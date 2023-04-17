@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="icon" href="home.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Ibarra+Real+Nova&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Ibarra+Real+Nova&family=Nanum+Myeongjo&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Ibarra+Real+Nova&family=Marcellus&family=Nanum+Myeongjo&family=Oranienbaum&family=PT+Serif&family=Playfair+Display&family=Unna&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<body onload="loader()">
+    <div class="load" id="loader">
+      <img src="logo-black_b.png" id="load-logo" class="invert">
+    </div>
+    <span style="display:none;" id="home" class="homepage">
+
+    
+    <header class="header1">
+    <div class="navigace">
+    
+<nav>
+    
+    <img src="logo-black_b.png" id="logo" class="invert">
+    <a href="" onclick="changeColorMode()" id="dark-mode" >color</a>
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="kontakt.html">contact</a>
+</nav>
+</div >
+</header>
+<header class="header2">
+<div class="open-mobile-nav">
+    
+    <nav>
+        <div class="mobile-nav" id="mySidenav">
+    <img src="logo-black_b.png" id="mobile-logo" class="invert">
+    <a href="" onclick="changeColorMode()" id="dark-mode" >color</a>
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="kontakt.html">contact</a>
+</div>
+</nav>
+<p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
+</header>
+
+<div class="introduce" >
+<h1>Michaelka</h1>
+<p>vývojář a grafik</p>
+</div>
+
+<div class="about" >
+
+<h4 id="about">ABOUT</h4>
+<span class="span about">
+<p> Jsem Michaela Ptáčková a je mi 15 let. Mým cílem je mít vlastní firmu ve které se budu zajímat o multimédia, webové stránky a design.</p> 
+<p>Mimo tvorbu webovek se zajímám o umění, což zahrnuje grafický design, hudbu, hru na klávesy, flétnu a kytaru, a taky knihy a poezii.</p>
+<p >Pokud vás zajímají mé práce tak je najdete v mém <a class="text-portfolio" href="portfolio.html">portfoliu</a>.</p>
+
+<h6>Praxe</h6>
+<p>Jako praxi v oboru mimo školu dělám webové stránky, na které se můžete podívat <a href="webovky.html">zde</a>.</p>
+<p>Ceník není stálý, proto ho zde nemohu dát, ceny jsou však velni výhodné, když zvážíme práci i čas.</p>
+
+<h6>Škola</h6>
+<p>Studuji na <a href="https://skolabaltaci.cz/">SŠ Baltaci</a> ve Zlíně, na oboru Informační technologie.</p>
+<p>V rámci školy se nejvíce zajímám o vývoj her, webových stránek a také o grafický design.</p>
+
+</span>
+</div>
+<div class="kontakt" id="kontakt">
+    <footer>
+        <a href="mailto:michaela.ptackova.mp@gmail.com" ><ion-icon name="mail-outline" class="mail" ></ion-icon></a>
+        <a href="http://www.instagram.com/michaelka.__/" target="_blank" > <ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+        <p>@Michaelka 2022</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+
+  <script>
+  
+    var timer;
+    function loader() {
+        timer = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+        document.getElementById("load-logo").style.display = "none";
+        
+        document.getElementById("home").style.display = "block";
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script> 
+function changeImage() {
+const logo3 = document.getElementById("mobile-logo")
+    
+    if (localStorage.getItem("colorMode") == "dark") {
+        logo3.classList.remove("invert");
+    } else {
+        logo3.classList.add("invert");
+    }
+}
+
+changeImage ();</script>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html>
